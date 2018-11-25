@@ -1,0 +1,5 @@
+Brooklyn,Manhattan,Bronx,Staten Island,Queens
+Queens,Manhattan,Bronx,Staten Island,Brooklyn
+Staten Island,Manhattan,Bronx,Queens,Brooklyn
+Bronx,Manhattan,Brooklyn,Queens,Staten Island
+Manhattan,Brooklyn,Queens,Staten Island,Bronx

@@ -1,0 +1,3 @@
+/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir

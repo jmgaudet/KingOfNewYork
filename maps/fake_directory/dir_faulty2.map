@@ -1,0 +1,12 @@
+THIS IS AN INVALID, FAULTY MAP:
+
+
+
+Brooklyn,Lower Manhattan,Bronx,Staten Island,Queens
+Queens,Lower Manhattan,Bronx,Staten Island,Brooklyn
+Staten Island,Lower Manhattan,Bronx,Queens,Brooklyn
+Bronx,Lower Manhattan,Brooklyn,Queens,Staten Island
+
+Lower Manhattan,Midtown Manhattan,Brooklyn,Queens,Staten Island,Bronx
+Midtown Manhattan,Upper Manhattan,Brooklyn,Queens,Staten Island,Bronx
+Upper Manhattan,Brooklyn,Queens,Staten Island,Bronx
