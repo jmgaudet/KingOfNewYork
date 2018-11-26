@@ -39,7 +39,7 @@ bool isValid_num(std::string input, int lower, int upper) {
 bool get_yesNo() {
     std::cin.clear();
     std::string yesNo = capture_input();
-    return (yesNo == "yes") || (yesNo == "y");
+    return (yesNo == "yes") || (yesNo == "y") || (yesNo == "YES") || (yesNo == "Y");
 }
 
 

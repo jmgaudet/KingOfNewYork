@@ -51,11 +51,11 @@
 		53504D2A219FB25600F45D49 /* moderate_strategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moderate_strategy.cpp; sourceTree = "<group>"; };
 		53504D2C219FB25E00F45D49 /* moderate_strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = moderate_strategy.h; sourceTree = "<group>"; };
 		53504D2D219FBAE500F45D49 /* aggressive_strategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = aggressive_strategy.cpp; sourceTree = "<group>"; };
-		53504D2F219FBAED00F45D49 /* aggressive_strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aggressive_strategy.h; sourceTree = "<group>"; };
 		535440D721862CB50011378B /* map_finder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = map_finder.cpp; sourceTree = "<group>"; };
 		535440D821862CB50011378B /* map_finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = map_finder.h; sourceTree = "<group>"; };
 		535493CF216FD3320012AF98 /* tokens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tokens.cpp; sourceTree = "<group>"; };
 		535493D1216FD3430012AF98 /* tokens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tokens.h; sourceTree = "<group>"; };
+		5369C13821AB805F001CBF73 /* aggressive_strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aggressive_strategy.h; sourceTree = "<group>"; };
 		537235FD218D159200A5EE1C /* tiles.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tiles.cpp; sourceTree = "<group>"; };
 		537235FE218D159200A5EE1C /* tiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tiles.h; sourceTree = "<group>"; };
 		53723600218D185B00A5EE1C /* power_cards.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = power_cards.cpp; sourceTree = "<group>"; };
@@ -117,40 +117,40 @@
 			children = (
 				53A1AC12216D7E75001458B7 /* deck_info */,
 				5391227F219E64B500329746 /* main.cpp */,
+				53504D2D219FBAE500F45D49 /* aggressive_strategy.cpp */,
+				5369C13821AB805F001CBF73 /* aggressive_strategy.h */,
 				53C9491A216AA1C500D839F1 /* dice_rolling.cpp */,
 				53C9491B216AA1C500D839F1 /* dice_rolling.h */,
 				5391227C219E132F00329746 /* engine.cpp */,
 				5391227E219E133800329746 /* engine.h */,
+				537DE94721A10874006A67C2 /* human_strategy.cpp */,
+				537DE94621A10865006A67C2 /* human_strategy.h */,
+				53C9491E216AAB3000D839F1 /* input.cpp */,
+				53C9491D216AA5C800D839F1 /* input.h */,
 				535440D721862CB50011378B /* map_finder.cpp */,
 				535440D821862CB50011378B /* map_finder.h */,
 				53C94923216AB3B300D839F1 /* map_loader.cpp */,
 				53C94925216AB3C400D839F1 /* map_loader.h */,
 				53C94926216AB40000D839F1 /* map.cpp */,
 				53C94928216AB40E00D839F1 /* map.h */,
-				53912270219C665B00329746 /* observer.cpp */,
-				53912272219C666700329746 /* observer.h */,
-				53C94920216AAC4A00D839F1 /* player.cpp */,
-				53C94922216AAC5800D839F1 /* player.h */,
-				537DE94721A10874006A67C2 /* human_strategy.cpp */,
-				537DE94621A10865006A67C2 /* human_strategy.h */,
-				53504D2D219FBAE500F45D49 /* aggressive_strategy.cpp */,
-				53504D2F219FBAED00F45D49 /* aggressive_strategy.h */,
 				53504D2A219FB25600F45D49 /* moderate_strategy.cpp */,
 				53504D2C219FB25E00F45D49 /* moderate_strategy.h */,
+				53912270219C665B00329746 /* observer.cpp */,
+				53912272219C666700329746 /* observer.h */,
 				53912278219CBE3200329746 /* player_view.cpp */,
 				53912277219CBE1800329746 /* player_view.h */,
+				53C94920216AAC4A00D839F1 /* player.cpp */,
+				53C94922216AAC5800D839F1 /* player.h */,
 				53723600218D185B00A5EE1C /* power_cards.cpp */,
 				53A1AC10216D6ECD001458B7 /* power_cards.h */,
-				5328A5F821A22C2B00005B66 /* statistics_view.cpp */,
-				5328A5FA21A22C3B00005B66 /* statistics_view.h */,
 				533AC9A8218B3EA300236260 /* resolve.cpp */,
 				533AC9AA218B3EB200236260 /* resolve.h */,
+				5328A5F821A22C2B00005B66 /* statistics_view.cpp */,
+				5328A5FA21A22C3B00005B66 /* statistics_view.h */,
 				53504D28219FA8CE00F45D49 /* strategy.cpp */,
 				53504D27219FA8C200F45D49 /* strategy.h */,
 				53912274219C6B3E00329746 /* subject.cpp */,
 				53912273219C6B3300329746 /* subject.h */,
-				53C9491E216AAB3000D839F1 /* input.cpp */,
-				53C9491D216AA5C800D839F1 /* input.h */,
 				537235FD218D159200A5EE1C /* tiles.cpp */,
 				537235FE218D159200A5EE1C /* tiles.h */,
 				535493CF216FD3320012AF98 /* tokens.cpp */,

@@ -26,6 +26,7 @@ public:
     void display_stat();
     void display_dice();
     void display_move();
+    void display_card();
 private:
     std::string monster_name;
     Player* _player;

@@ -14,5 +14,6 @@
 #include <vector>
 
 void dirwalk(const char* path, std::vector<std::string> &list);
+void dirwalk_powerful(char *path, std::vector<std::string> &list);
 
 #endif /* map_finder_h */

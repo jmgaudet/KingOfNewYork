@@ -1,4 +1,4 @@
-//
+ //
 //  map_finder.cpp
 //  KingOfNewYork_A3
 //
@@ -36,31 +36,37 @@ void dirwalk(const char *path, std::vector<std::string> &list) {
  Version that would search thru directories:
  */
 
-//    DIR *dir;
-//    struct dirent *ent;
-//    if (!(dir = opendir(path))) {   // if NULL, return to main
-//        closedir(dir);
-//        return;
-//    }
-//
-//    while ((ent = readdir(dir)) != nullptr) {
-//        if (ent->d_type == DT_DIR) {
-//            if ( (strcmp(ent->d_name, ".")) == 0 || (strcmp(ent->d_name, "..") == 0) )
-//                continue;
-//            char *subdir = const_cast<char *>("");
-//            strcpy(subdir, path);
-//            strcat(subdir, "/");
-//            strcat(subdir, ent->d_name);
-//            dirwalk(subdir);
-//        }
-//        else {
-//            if (strncmp(ent->d_name + strlen(ent->d_name) - 4, ".map", 4) == 0) {
-//                char *subdir2 = const_cast<char *>("");
-//                strcpy(subdir2, path);
-//                strcat(subdir2, "/");
-//                strcat(subdir2, ent->d_name);
-//                printf("%s\n", ent->d_name);
-//            }
-//        }
-//    }
-//    closedir(dir);
+void dirwalk_powerful(char *path, std::vector<std::string> &list) {
+    DIR *dir;
+    struct dirent *ent;
+    if (!(dir = opendir(path))) {   // if NULL, return to main
+        closedir(dir);
+        return;
+    }
+//    char *subdir = const_cast<char *>("");
+    char result[1000];
+
+    while ((ent = readdir(dir)) != nullptr) {
+        if (ent->d_type == DT_DIR) {
+            if ( (strcmp(ent->d_name, ".")) == 0 || (strcmp(ent->d_name, "..") == 0) )
+                continue;
+//                strcpy(subdir, path);
+            strcpy(result, path);
+            strcat(result, "/");
+            strcat(result, ent->d_name);
+            dirwalk_powerful(result, list);
+        }
+        else {
+            if (strncmp(ent->d_name + strlen(ent->d_name) - 4, ".map", 4) == 0) {
+//                strcpy(result, path);
+//                strcat(result, "/");
+//                strcat(result, ent->d_name);
+                printf("%s\n", ent->d_name);
+                list.push_back(ent->d_name);
+            }
+        }
+    }
+    closedir(dir);
+}
+
+

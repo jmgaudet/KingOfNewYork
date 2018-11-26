@@ -26,14 +26,6 @@ void Subject::Detach(Observer* o) {
     _observers->remove(o);
 }
 
-//void Subject::Notify(Phase game_phase) {
-//    std::list<Observer *>::iterator i = _observers->begin();
-//    for ( ; i != _observers->end(); ++i) {
-////            std::cout << "I found an observer!\n\n";
-//        (*i)->update(game_phase);
-//    }
-//}
-
 void Subject::Notify() {
     std::list<Observer *>::iterator i = _observers->begin();
     for ( ; i != _observers->end(); ++i)

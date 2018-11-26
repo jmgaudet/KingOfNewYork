@@ -13,7 +13,6 @@
 PlayerView::PlayerView() {}
 
 PlayerView::PlayerView(Player* p) {
-    // upon initialization, attaches itself to a player
     _player = p;
 //    _player->Attach(this);
 }
@@ -36,6 +35,8 @@ void PlayerView::update() {
         display_dice();
     else if (state == MOVE)
         display_move();
+    else if (state == BUY_CARDS)
+        display_card();
 }
 
 void PlayerView::display_stat() {
@@ -65,5 +66,9 @@ void PlayerView::display_move() {
         }
     }
     std::cout << "\n";
+}
+
+void PlayerView::display_card() {
+    
 }
 

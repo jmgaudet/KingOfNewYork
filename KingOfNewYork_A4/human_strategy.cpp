@@ -28,7 +28,7 @@ void Human::move(Player* p) {
         exit(1);
     }
     // if Player is in Manhattan and has NOT just been attacked, Player must move to next Manhattan_space:
-    if (current_loc == "Manhattan" && p->attacked == false) {
+    if (current_loc == "Manhattan" && !p->attacked) {
         std::cout << "You are currently in Manhattan, which means you cannot move on this turn.\n";
         if (p->get_zone() == LOWER) { p->set_zone(MIDDLE); }
         if (p->get_zone() == MIDDLE) { p->set_zone(UPPER); }
@@ -110,7 +110,7 @@ void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
         display_avail_cards(v);
         std::cout << "\nThese are the ones available [y/n]: ";
         bool answer = get_yesNo();
-        if (answer == true) {
+        if (answer) {
             std::cout << "Enter the ID number of the card you wish to buy: ";
             int choice = 0;
             int place = 0;

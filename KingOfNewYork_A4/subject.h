@@ -22,7 +22,7 @@ private:
 public:
     virtual void Attach(Observer* o);
     virtual void Detach(Observer* o);
-    virtual void Notify();
+    virtual void Notify();  // have to keep this method as PUBLIC because it is used in places other than "player.cpp"
     Subject();
     ~Subject();
 };

@@ -44,8 +44,9 @@ Engine::~Engine() {}
 
 void Engine::choose_map() {
     //  Preparing the Game Board, and setting Player turn order
-    const char* path= "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A3/maps";
+    const char* path= "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/maps";
     std::vector<std::string> map_files;
+//    dirwalk_powerful(path, map_files);
     dirwalk(path, map_files);   // "path" remains const; "map_files" is given a list of possible .map files from the original directory "path".
     std::vector<std::string> *v = import_map(path, map_files);
     
@@ -57,12 +58,25 @@ void Engine::choose_map() {
 
 // creating the vector of players:
 void Engine::create_players() {
+    std::string mode_choice;
+    do {
+        std::cout << "Select which GAME_MODE you want to play:\n"
+        << "[1] -- Single player mode (1 human, 1-5 AI players)\n[2] -- Tournament mode (2-6 AI players)" << std::endl;
+        mode_choice = capture_input();
+    } while (!isValid_num(mode_choice, 1, 2));
+    if (get_digit(mode_choice) == 1)
+        single_player_mode();
+    else
+        tournament_mode();
+}
+
+void Engine::single_player_mode() {
     int player_num = 0;
     bool ready = false;
     while (!ready) {
-        std::cout << "\nHow many people wish to play?\nENTER number of players: ";
+        std::cout << "\nHow many people wish to play?\nENTER a TOTAL number of players [2-6]: ";
         std::string ans = capture_input();
-        if (isValid_num(ans, 1, 6)) {
+        if (isValid_num(ans, 2, 6)) {
             ready = true;
             player_num = get_digit(ans);
         }
@@ -77,6 +91,26 @@ void Engine::create_players() {
             else
                 vPlayers.push_back(new Player(my_board, new Aggressive));
         }
+    }
+}
+
+void Engine::tournament_mode() {
+    int player_num = 0;
+    bool ready = false;
+    while (!ready) {
+        std::cout << "\nHow many AI players are going to battle it out?\nENTER a TOTAL number of players [2-6]: ";
+        std::string ans = capture_input();
+        if (isValid_num(ans, 2, 6)) {
+            ready = true;
+            player_num = get_digit(ans);
+        }
+    }
+    for (int i = 0; i < player_num; i++) {
+        int random = rand() % 2;
+        if (random == 0)
+            vPlayers.push_back(new Player(my_board, new Moderate));
+        else
+            vPlayers.push_back(new Player(my_board, new Aggressive));
     }
 }
 
@@ -123,9 +157,6 @@ void Engine::setup_playerObservers() {
     for (int i = 0; i < vPlayers.size(); i++) {
         PlayerView* plv = new PlayerView(vPlayers[i]);
         vPlayers[i]->Attach(plv);
-//        for (int j = 0; j < vPlayers.size(); j++) {
-//            vPlayers[i]->Attach(plv);
-//        }
     }
 }
 

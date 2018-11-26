@@ -30,6 +30,8 @@ class Engine : public Subject {
 private:
     void choose_map();
     void create_players();
+    void single_player_mode();
+    void tournament_mode();
     void set_starting_positions();
     void setup_tiles(const Graph& g);
     void setup_powerCards(power_cards& mydeck);
