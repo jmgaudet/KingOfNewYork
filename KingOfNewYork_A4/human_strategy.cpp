@@ -120,13 +120,11 @@ void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
                 if (card.ID == choice) {
                     if (card.cost <= p->get_energy()) {
                         p->add_energy(-card.cost);
-//                        p->energy_cubes -= card.cost;
                         p->add_to_hand(card);
-//                        p->hand.push_back(card);
                         std::cout << "\n * You have this many remaining ENERGY CUBES: " << p->get_energy() << "\n\n";
                         v.erase(v.begin()+place);   // if the player buys a card matching the correct ID, the card must be removed from the vector
                         // re-populate the available Power cards list:
-                        while (v.size() < 3) {
+                        while (v.size() < 3 && s.size() > 0) {
                             v.push_back(s.top());
                             s.pop();
                         }
@@ -169,7 +167,7 @@ void Human::resolve_dice(Player *p, std::vector<Player*> pls) {
         if (itr == mapping.end())
             std::cout << "Your choice of dice was not valid.\n\n";
         else {
-            resolve_generator(itr, p, pls);
+            resolve_generator(itr, p, pls); // Human player goes back into the default resolve_generator located in "resolve.cpp"
             mapping.erase(itr);
         }
     }
