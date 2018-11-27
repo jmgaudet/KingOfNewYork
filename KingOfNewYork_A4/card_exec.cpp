@@ -12,8 +12,8 @@
 
 CardExecution::CardExecution() {}
 
-CardExecution::CardExecution(Card c) {
-    a_card = &c;
+CardExecution::CardExecution(Card* c) {
+    a_card = c;
     a_card->Attach(this);
 }
 
@@ -22,7 +22,10 @@ CardExecution::~CardExecution() {
 }
 
 void CardExecution::update(Player* p) {
-    
+    std::cout << "\n\n\nYOU MADE IT HERE\n\n\n";
+    std::string aaa = a_card->description;
+    std::cout << a_card->description << std::endl;
+
 }
 
 void CardExecution::update() {

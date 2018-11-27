@@ -23,7 +23,7 @@ private:
     Card* a_card;
 public:
     CardExecution();
-    CardExecution(Card c);
+    CardExecution(Card* c);
     virtual ~CardExecution();
     void update() override;
     void update(Player* p) override;

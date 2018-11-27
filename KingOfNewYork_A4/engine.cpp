@@ -144,7 +144,7 @@ void Engine::setup_tiles(const Graph& g) {
 void Engine::setup_powerCards(std::vector<Card>& d) {
     initiate_cards(d);
     for (auto& card : d) {
-        CardExecution* cdex = new CardExecution(card);
+        CardExecution* cdex = new CardExecution(&card);
     }
     shuffle_cards(d);
     for (const auto& card : d)

@@ -42,7 +42,7 @@ std::vector<Card> Player::get_hand() { return hand; }
 
 void Player::add_to_hand(Card c) {
     this->hand.push_back(c);
-    c.Notify();
+    c.Notify(this);
 }
 
 void Player::add_victoryPoints(int x) { victory_points += x; }
