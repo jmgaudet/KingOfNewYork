@@ -11,29 +11,50 @@
 #include "observer.h"
 
 Subject::Subject() {
-    _observers = new std::list<Observer *>;
 }
 
 Subject::~Subject() {
-//    delete _observers;
+    std::vector<Observer *>::iterator i = _observers.begin();
+    for ( ; i != _observers.end(); ++i)
+        delete (*i);
 }
 
+//void Subject::Attach(Observer* o) {
+//    _observers->push_back(o);
+//}
+//
+//void Subject::Detach(Observer* o) {
+//    _observers->erase(std::remove(_observers->begin(), _observers->end(), o), _observers->end());
+////    _observers->remove(o);
+//}
+//
+//void Subject::Notify() {
+//    std::vector<Observer *>::iterator i = _observers->begin();
+//    for ( ; i != _observers->end(); ++i)
+//        (*i)->update();
+//}
+//
+//void Subject::Notify(Player* p) {
+//    std::vector<Observer *>::iterator i = _observers->begin();
+//    for ( ; i != _observers->end(); ++i)
+//        (*i)->update(p);
+//}
 void Subject::Attach(Observer* o) {
-    _observers->push_back(o);
+    _observers.push_back(o);
 }
 
 void Subject::Detach(Observer* o) {
-    _observers->remove(o);
+    _observers.erase(std::remove(_observers.begin(), _observers.end(), o), _observers.end());
 }
 
 void Subject::Notify() {
-    std::list<Observer *>::iterator i = _observers->begin();
-    for ( ; i != _observers->end(); ++i)
+    std::vector<Observer *>::iterator i = _observers.begin();
+    for ( ; i != _observers.end(); ++i)
         (*i)->update();
 }
 
 void Subject::Notify(Player* p) {
-    std::list<Observer *>::iterator i = _observers->begin();
-    for ( ; i != _observers->end(); ++i)
+    std::vector<Observer *>::iterator i = _observers.begin();
+    for ( ; i != _observers.end(); ++i)
         (*i)->update(p);
 }

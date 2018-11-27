@@ -23,6 +23,8 @@ constexpr std::size_t NCARDS = 66;
 
 class Card : public Subject {
 public:
+    Card();
+    virtual ~Card();
     int ID;
     std::string name;
     std::string type;

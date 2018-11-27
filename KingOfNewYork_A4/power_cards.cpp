@@ -12,6 +12,9 @@
 #include <random>
 #include <iterator>
 
+Card::Card() {}
+Card::~Card() {}
+
 void initiate_cards(std::vector<Card>& pc) {
     std::ifstream ifs("/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A2/KingOfNewYork_A2/deck_info/cards.json");
     nlohmann::json j = nlohmann::json::parse(ifs);

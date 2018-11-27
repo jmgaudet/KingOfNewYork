@@ -10,7 +10,7 @@
 #ifndef subject_h
 #define subject_h
 
-#include <list>
+#include <vector>
 #include <string>
 #include <iostream>
 
@@ -19,14 +19,14 @@ class Player;
 
 class Subject {
 private:
-    std::list<Observer *> *_observers;
+    std::vector<Observer *> _observers;
 public:
     virtual void Attach(Observer* o);
     virtual void Detach(Observer* o);
     virtual void Notify();  // have to keep this method as PUBLIC because it is used in places other than "player.cpp"
     virtual void Notify(Player* p);
     Subject();
-    ~Subject();
+    virtual ~Subject();
 };
 
 

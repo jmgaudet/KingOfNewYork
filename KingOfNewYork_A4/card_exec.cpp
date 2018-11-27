@@ -14,7 +14,7 @@ CardExecution::CardExecution() {}
 
 CardExecution::CardExecution(Card* c) {
     a_card = c;
-    a_card->Attach(this);
+//    a_card->Attach(this);
 }
 
 CardExecution::~CardExecution() {

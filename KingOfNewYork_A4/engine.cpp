@@ -8,6 +8,8 @@
 //
 
 #include "engine.h"
+#include "nlohmann/json.hpp"    // I'm using this to import the 66 power cards from a .json file
+
 
 
 Engine::Engine() {
@@ -35,7 +37,7 @@ Engine::Engine() {
     
     // setting up the miscellaneous remaining pieces:
     setup_tiles(my_board);
-    setup_powerCards(this->my_deck);
+    setup_powerCards(my_deck);
     init_tokens(web_tokens, jinx_tokens, souvenir_tokens, carapace_tokens);
     setup_playerObservers();
 //    setup_cardExecution();
@@ -145,7 +147,11 @@ void Engine::setup_powerCards(std::vector<Card>& d) {
     initiate_cards(d);
     for (auto& card : d) {
         CardExecution* cdex = new CardExecution(&card);
+        card.Attach(cdex);
     }
+    
+//    for (auto& card : d) {
+//    }
     shuffle_cards(d);
     for (const auto& card : d)
         my_stack_pc.push(card);
