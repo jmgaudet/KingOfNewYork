@@ -13,6 +13,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
 #include <algorithm>        // std::random_shuffle
 #include <ctime>            // std::time
 #include <cstdlib>          // std::rand, std::srand
@@ -28,7 +29,7 @@ public:
     int cost;
     std::string description;
     
-    using power_cards = Card[NCARDS];
+//    using power_cards = Card[NCARDS];
 //    void initiate_cards(power_cards& fresh_deck);
 //    void card_description(const Card& card);
 //    void show_cards(const power_cards& deck);
@@ -36,9 +37,22 @@ public:
 };
 
 //using power_cards = Card[NCARDS];
-void initiate_cards(Card::power_cards& fresh_deck);
+//void initiate_cards(Card::power_cards& fresh_deck);
+void initiate_cards(std::vector<Card>& pc);
+
+
+//void initiate_observer(const Card::power_cards& deck);
 void card_description(const Card& card);
-void show_cards(const Card::power_cards& deck);
-void shuffle_cards(Card::power_cards& deck);
+//void card_description2(std::vector<Card>& pc);
+
+
+//void show_cards(const Card::power_cards& deck);
+void show_cards2(const std::vector<Card>& pc);
+
+
+
+//void shuffle_cards(Card::power_cards& deck);
+void shuffle_cards(std::vector<Card>& pc);
+
 
 #endif /* power_cards_h */

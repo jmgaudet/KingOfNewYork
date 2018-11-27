@@ -15,7 +15,7 @@ Subject::Subject() {
 }
 
 Subject::~Subject() {
-    delete _observers;
+//    delete _observers;
 }
 
 void Subject::Attach(Observer* o) {
@@ -30,4 +30,10 @@ void Subject::Notify() {
     std::list<Observer *>::iterator i = _observers->begin();
     for ( ; i != _observers->end(); ++i)
         (*i)->update();
+}
+
+void Subject::Notify(Player* p) {
+    std::list<Observer *>::iterator i = _observers->begin();
+    for ( ; i != _observers->end(); ++i)
+        (*i)->update(p);
 }

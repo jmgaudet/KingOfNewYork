@@ -40,7 +40,10 @@ int Player::get_lifepoints() { return life_points; }
 
 std::vector<Card> Player::get_hand() { return hand; }
 
-void Player::add_to_hand(Card c) { this->hand.push_back(c); }
+void Player::add_to_hand(Card c) {
+    this->hand.push_back(c);
+    c.Notify();
+}
 
 void Player::add_victoryPoints(int x) { victory_points += x; }
 

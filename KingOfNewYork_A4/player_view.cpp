@@ -39,6 +39,10 @@ void PlayerView::update() {
         display_card();
 }
 
+void PlayerView::update(Player* p) {
+    // left empty
+}
+
 void PlayerView::display_stat() {
     std::cout << "\nUPDATED PLAYER VALUES" << std::endl;
     std::cout << "*NAME: " << monster_name << std::endl;

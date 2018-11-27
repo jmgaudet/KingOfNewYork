@@ -24,6 +24,10 @@ void StatisticsView::update() {
     display();
 }
 
+void StatisticsView::update(Player* p) {
+    // left empty
+}
+
 std::string StatisticsView::get_players_borough(std::string location) {
     std::string answer;
     if (_engine->my_board.walk.at(location)->num_players > 0) {

@@ -18,7 +18,7 @@ public:
     ~StatisticsView() override;
     StatisticsView(Engine* game);
     void update() override;
-//    void update(std::string phase) override;
+    void update(Player* p) override;
     void display();
     std::string get_players_borough(std::string location);
     

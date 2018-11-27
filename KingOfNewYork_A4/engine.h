@@ -24,6 +24,7 @@
 #include "moderate_strategy.h"
 #include "human_strategy.h"
 #include "subject.h"
+#include "card_exec.h"
 
 
 class Engine : public Subject {
@@ -34,8 +35,9 @@ private:
     void tournament_mode();
     void set_starting_positions();
     void setup_tiles(const Graph& g);
-    void setup_powerCards(Card::power_cards& mydeck);
+    void setup_powerCards(std::vector<Card>& mydeck);
     void setup_playerObservers();
+    void setup_cardExecution();
     
 public:
     Engine();
@@ -44,7 +46,9 @@ public:
     Graph my_board;
     std::vector<Player*> vPlayers;
     int first;
-    Card::power_cards my_deck;
+    
+    std::vector<Card> my_deck;
+    
     std::stack<Card> my_stack_pc;
     std::vector<Card> available_pc;    // have a vector of Cards that shows the three available power_cards from the stack
     std::stack<Web_T> web_tokens;

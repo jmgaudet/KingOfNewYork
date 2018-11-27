@@ -16,20 +16,20 @@
 // CONCRETE OBSERVER
 
 class PlayerView : public Observer {
+private:
+    std::string monster_name;
+    Player* _player;
 public:
     PlayerView();
     PlayerView(Player* p);
     virtual ~PlayerView();
-//    void update(Phase game_phase) override;
+    void update(Player* p) override;
     void update() override;
 //    void register_view(Player* p);
     void display_stat();
     void display_dice();
     void display_move();
     void display_card();
-private:
-    std::string monster_name;
-    Player* _player;
 };
 
 

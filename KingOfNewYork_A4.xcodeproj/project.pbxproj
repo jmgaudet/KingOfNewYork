@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5328A5F921A22C2B00005B66 /* statistics_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328A5F821A22C2B00005B66 /* statistics_view.cpp */; };
 		533AC9A9218B3EA300236260 /* resolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533AC9A8218B3EA300236260 /* resolve.cpp */; };
+		5341FD0621ACD07700301601 /* card_exec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5341FD0521ACD07700301601 /* card_exec.cpp */; };
 		53504D29219FA8CE00F45D49 /* strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53504D28219FA8CE00F45D49 /* strategy.cpp */; };
 		53504D2B219FB25600F45D49 /* moderate_strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53504D2A219FB25600F45D49 /* moderate_strategy.cpp */; };
 		53504D2E219FBAE500F45D49 /* aggressive_strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53504D2D219FBAE500F45D49 /* aggressive_strategy.cpp */; };
@@ -46,6 +47,8 @@
 		5328A5FA21A22C3B00005B66 /* statistics_view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = statistics_view.h; sourceTree = "<group>"; };
 		533AC9A8218B3EA300236260 /* resolve.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resolve.cpp; sourceTree = "<group>"; };
 		533AC9AA218B3EB200236260 /* resolve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resolve.h; sourceTree = "<group>"; };
+		5341FD0421ACD06700301601 /* card_exec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = card_exec.h; sourceTree = "<group>"; };
+		5341FD0521ACD07700301601 /* card_exec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = card_exec.cpp; sourceTree = "<group>"; };
 		53504D27219FA8C200F45D49 /* strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strategy.h; sourceTree = "<group>"; };
 		53504D28219FA8CE00F45D49 /* strategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = strategy.cpp; sourceTree = "<group>"; };
 		53504D2A219FB25600F45D49 /* moderate_strategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moderate_strategy.cpp; sourceTree = "<group>"; };
@@ -115,10 +118,12 @@
 		53C94901216A98E800D839F1 /* KingOfNewYork_A4 */ = {
 			isa = PBXGroup;
 			children = (
-				53A1AC12216D7E75001458B7 /* deck_info */,
 				5391227F219E64B500329746 /* main.cpp */,
 				53504D2D219FBAE500F45D49 /* aggressive_strategy.cpp */,
 				5369C13821AB805F001CBF73 /* aggressive_strategy.h */,
+				5341FD0521ACD07700301601 /* card_exec.cpp */,
+				5341FD0421ACD06700301601 /* card_exec.h */,
+				53A1AC12216D7E75001458B7 /* deck_info */,
 				53C9491A216AA1C500D839F1 /* dice_rolling.cpp */,
 				53C9491B216AA1C500D839F1 /* dice_rolling.h */,
 				5391227C219E132F00329746 /* engine.cpp */,
@@ -229,6 +234,7 @@
 				53C94921216AAC4A00D839F1 /* player.cpp in Sources */,
 				53C94927216AB40000D839F1 /* map.cpp in Sources */,
 				53912280219E64B600329746 /* main.cpp in Sources */,
+				5341FD0621ACD07700301601 /* card_exec.cpp in Sources */,
 				53912279219CBE3200329746 /* player_view.cpp in Sources */,
 				53C9491F216AAB3000D839F1 /* input.cpp in Sources */,
 				53723601218D185C00A5EE1C /* power_cards.cpp in Sources */,

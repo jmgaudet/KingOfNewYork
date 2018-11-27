@@ -12,13 +12,13 @@
 
 #include <string>
 
-
+class Player;
 
 class Observer {
 public:
     virtual ~Observer();
-//    virtual void update(Phase game_phase) = 0;
     virtual void update() = 0;
+    virtual void update(Player* p) = 0;
 protected:
     Observer();
 };

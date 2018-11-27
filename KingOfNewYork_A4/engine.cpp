@@ -38,6 +38,7 @@ Engine::Engine() {
     setup_powerCards(this->my_deck);
     init_tokens(web_tokens, jinx_tokens, souvenir_tokens, carapace_tokens);
     setup_playerObservers();
+//    setup_cardExecution();
 }
 
 Engine::~Engine() {}
@@ -140,8 +141,11 @@ void Engine::setup_tiles(const Graph& g) {
     }
 }
 
-void Engine::setup_powerCards(Card::power_cards& d) {
+void Engine::setup_powerCards(std::vector<Card>& d) {
     initiate_cards(d);
+    for (auto& card : d) {
+        CardExecution* cdex = new CardExecution(card);
+    }
     shuffle_cards(d);
     for (const auto& card : d)
         my_stack_pc.push(card);
@@ -159,6 +163,12 @@ void Engine::setup_playerObservers() {
         vPlayers[i]->Attach(plv);
     }
 }
+
+//void Engine::setup_cardExecution() {
+//    for (int i = 0; i < vPlayers.size(); i++) {
+//        CardE
+//    }
+//}
 
 //void Engine::setup_playerObservers() {
 //    PlayerView* humanView = new PlayerView(vPlayers[0]);
