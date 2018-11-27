@@ -26,7 +26,7 @@ public:
     virtual void Notify();  // have to keep this method as PUBLIC because it is used in places other than "player.cpp"
     virtual void Notify(Player* p);
     Subject();
-    virtual ~Subject();
+    ~Subject();
 };
 
 

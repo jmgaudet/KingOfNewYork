@@ -10,14 +10,9 @@
 #include "subject.h"
 #include "observer.h"
 
-Subject::Subject() {
-}
+Subject::Subject() {}
 
-Subject::~Subject() {
-    std::vector<Observer *>::iterator i = _observers.begin();
-    for ( ; i != _observers.end(); ++i)
-        delete (*i);
-}
+Subject::~Subject() {}
 
 //void Subject::Attach(Observer* o) {
 //    _observers->push_back(o);
