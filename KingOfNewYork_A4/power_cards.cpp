@@ -10,7 +10,7 @@
 #include "power_cards.h"
 #include "nlohmann/json.hpp"    // I'm using this to import the 66 power cards from a .json file
 
-void initiate_cards(power_cards& fresh_deck) {
+void initiate_cards(Card::power_cards& fresh_deck) {
     std::ifstream ifs("/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A2/KingOfNewYork_A2/deck_info/cards.json");
     nlohmann::json j = nlohmann::json::parse(ifs);
     for (std::size_t index = 0; index < NCARDS; ++index) {
@@ -33,12 +33,12 @@ void card_description(const Card& card) {
 // random number generator function:
 int myrandom (int i) { return std::rand()%i; }
 
-void shuffle_cards(power_cards& deck) {
+void shuffle_cards(Card::power_cards& deck) {
     std::srand(unsigned(std::time(nullptr)));
     std::random_shuffle(deck + 2, deck + NCARDS, myrandom);     // the "deck + 2" leaves the two important GOAL cards on top
 }
 
-void show_cards(const power_cards& deck) {
+void show_cards(const Card::power_cards& deck) {
     for (const auto& card : deck) {
         card_description(card);
         std::cout << std::endl;

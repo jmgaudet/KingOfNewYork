@@ -140,7 +140,7 @@ void Engine::setup_tiles(const Graph& g) {
     }
 }
 
-void Engine::setup_powerCards(power_cards& d) {
+void Engine::setup_powerCards(Card::power_cards& d) {
     initiate_cards(d);
     shuffle_cards(d);
     for (const auto& card : d)

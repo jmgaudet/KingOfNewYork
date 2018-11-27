@@ -34,7 +34,7 @@ private:
     void tournament_mode();
     void set_starting_positions();
     void setup_tiles(const Graph& g);
-    void setup_powerCards(power_cards& mydeck);
+    void setup_powerCards(Card::power_cards& mydeck);
     void setup_playerObservers();
     
 public:
@@ -44,7 +44,7 @@ public:
     Graph my_board;
     std::vector<Player*> vPlayers;
     int first;
-    power_cards my_deck;
+    Card::power_cards my_deck;
     std::stack<Card> my_stack_pc;
     std::vector<Card> available_pc;    // have a vector of Cards that shows the three available power_cards from the stack
     std::stack<Web_T> web_tokens;
