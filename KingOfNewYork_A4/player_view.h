@@ -22,7 +22,7 @@ public:
     virtual ~PlayerView();
 //    void update(Phase game_phase) override;
     void update() override;
-    void register_view(Player* p);
+//    void register_view(Player* p);
     void display_stat();
     void display_dice();
     void display_move();
