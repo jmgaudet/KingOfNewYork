@@ -192,22 +192,29 @@ void d_heal(int x, Player *p) {
 void d_celeb(int x, Player *p, std::vector<Player *> pls) {
     std::string myString = "Superstar";
     // next line creates an ITERATOR that SEARCHES for the Superstar card in Player p's hand:
-    auto itr = find_if(p->get_hand().begin(), p->get_hand().end(), [&myString](const Card& obj) {return obj.name == myString;});
-    if (itr != p->get_hand().end())  // this means that the player HAS the Superstar card
-        p->add_victoryPoints(x);
-    else {  // player does NOT have the Superstar card
-        if (x >= 3) {
+    std::vector<Card>::const_iterator it;
+    for (it = p->get_hand().begin(); it != p->get_hand().end(); it++) {
+        if (it->name == myString) {
+            p->add_victoryPoints(x);
+            return;
+        }
+    }
+    // player does NOT have the Superstar card
+//    auto itr = find_if(p->get_hand().begin(), p->get_hand().end(), [&myString](const Card& obj) {return obj.name == myString;});
+//    if (itr != p->get_hand().end())  // this means that the player HAS the Superstar card
+//        p->add_victoryPoints(x);
+    if (x >= 3) {
             // Here, the player should be ASSIGNED the Superstar card
 //            for (Player &player : *pls) {
 //                auto itr2 = find_if(player.get_hand().begin(), player.get_hand().end(), [&myString](const Card& obj) {return obj.name == myString;});
 //                player.get_hand().erase(itr2);  // this erases the card from another player's hand
 //                   // have to give the current player the SUPERSTAR card here
 //            }
-            p->add_victoryPoints(x - 3);
-            std::cout << p->get_monster_name() << " takes the SUPERSTAR card and gains " << (x-3) << " VICTORY POINTS\n";
-        }
-        std::cout << p->get_monster_name() << " doesn't have either the SUPERSTAR card or the minimum number of CELEBRITY dice to take it.\n";
+        p->add_victoryPoints(x - 3);
+        std::cout << p->get_monster_name() << " takes the SUPERSTAR card and gains " << (x-3) << " VICTORY POINTS\n";
+        return;
     }
+    std::cout << p->get_monster_name() << " doesn't have either the SUPERSTAR card or the minimum number of CELEBRITY dice to take it.\n";
 }
 
 void d_ouch(int x, Player *p, std::vector<Player *> pls) {
