@@ -13,7 +13,9 @@
 
 Player::Player() {}
 Player::~Player() {
-    std::cout << "\n\n\nI HAVE DELETED A PLAYER\n\n\n";
+    std::cout << "\n*****************************" << std::endl;
+    std::cout << get_monster_name() << " HAS BEEN DEFEATED!" << std::endl;
+    std::cout << "*****************************\n" << std::endl;
 }
 
 // Human Player constructor:

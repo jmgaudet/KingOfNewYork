@@ -14,10 +14,11 @@
 #include "statistics_view.h"    // "engine.h" cannot have this file, or circular-relationship happens!
 
 // This is needed to delete a Player from the vector:
-template <typename Player>
-void remove_player(Player& p, size_t pos) {
+void remove_player(std::vector<Player *>& p, size_t pos) {
     auto itr = p.begin();
     std::advance(itr, pos);
+    delete (*itr);
+    *itr = nullptr;
     p.erase(itr);
 }
 
@@ -40,6 +41,11 @@ void testing(Engine* e) {
     meg->set_location("Queens");
     
     bob->execute_move(bob);
+    
+    delete bob;
+    delete meg;
+    delete plb;
+    delete plm;
     
 }
 
@@ -110,5 +116,6 @@ int main() {
 finish:
     std::cout << e->vPlayers[x]->get_monster_name() << " has won the game!\n";
     delete overhead;
+    delete e;
 }
 

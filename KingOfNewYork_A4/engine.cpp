@@ -43,7 +43,19 @@ Engine::Engine() {
 //    setup_cardExecution();
 }
 
-Engine::~Engine() {}
+//std::vector<Observer *>::iterator i = _observers->begin();
+//    for ( ; i != _observers->end(); ++i)
+//        (*i)->update(p);
+
+Engine::~Engine() {
+//    std::vector<Player *>::iterator i = vPlayers.begin();
+//    for ( ; i != vPlayers.end(); ++i) {
+//        delete (*i);
+//        vPlayers.erase(i);
+//    }
+//
+//    std::cout << "size --> " << vPlayers.size() << std::endl;
+}
 
 void Engine::choose_map() {
     //  Preparing the Game Board, and setting Player turn order
