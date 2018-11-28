@@ -22,16 +22,18 @@ CardExecution::~CardExecution() {
 }
 
 void CardExecution::update(Player* p) {
-    std::cout << "\n\n\nYOU MADE IT HERE\n\n\n";
-    std::string aaa = a_card->description;
-    std::cout << a_card->description << std::endl;
-
+    std::cout << p->get_monster_name() << " purchased: " << a_card->name << "\nDESC: " << a_card->description << std::endl;
+    execute(p);
 }
 
 void CardExecution::update() {
     // left empty
 }
 
-void CardExecution::execute() {
-    
+void CardExecution::execute(Player* p) {
+    if (a_card->ID == 14) {
+        p->add_victoryPoints(2);
+        delete a_card;
+        a_card = nullptr;
+    }
 }

@@ -19,7 +19,6 @@
 
 class CardExecution : public Observer {
 private:
-//    Player* _player;
     Card* a_card;
 public:
     CardExecution();
@@ -27,7 +26,7 @@ public:
     virtual ~CardExecution();
     void update() override;
     void update(Player* p) override;
-    void execute();
+    void execute(Player* p);
 };
 
 

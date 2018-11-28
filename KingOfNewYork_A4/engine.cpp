@@ -157,14 +157,11 @@ void Engine::setup_tiles(const Graph& g) {
 
 void Engine::setup_powerCards(std::vector<Card>& d) {
     initiate_cards(d);
+    shuffle_cards(d);   // suffle_cards() MUST come before the below Observer creation. Or else the observers get mis-matched!
     for (auto& card : d) {
         CardExecution* cdex = new CardExecution(&card);
         card.Attach(cdex);
     }
-    
-//    for (auto& card : d) {
-//    }
-    shuffle_cards(d);
     for (const auto& card : d)
         my_stack_pc.push(card);
     while (available_pc.size() < 3) {

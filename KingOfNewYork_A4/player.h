@@ -32,7 +32,7 @@ class Player : public Subject {
 private:
     int life_points = 10;
     int victory_points = 0;
-    int energy_cubes = 20;
+    int energy_cubes = 2000;
     Zone player_zone = OUTSIDE; // a Player always begins the game OUTSIDE of Manhattan
     Phase player_phase = START;
     std::vector<Card> hand;     // this is for the player's cards that they bought

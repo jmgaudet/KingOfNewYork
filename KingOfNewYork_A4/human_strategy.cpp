@@ -112,10 +112,9 @@ void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
         bool answer = get_yesNo();
         if (answer) {
             std::cout << "Enter the ID number of the card you wish to buy: ";
-            int choice = 0;
+            std::string des = capture_input();
+            int choice = get_digit(des);
             int place = 0;
-            std::cin >> choice;
-            std::cin.ignore();
             for (const auto& card : v) {
                 if (card.ID == choice) {
                     if (card.cost <= p->get_energy()) {
@@ -140,7 +139,7 @@ void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
                 bool answer2 = get_yesNo();
                 if (answer2 == true) {
                     v.clear();
-                    while (v.size() < 3) {
+                    while (v.size() < 3 && s.size() > 0) {
                         v.push_back(s.top());
                         s.pop();
                     }
