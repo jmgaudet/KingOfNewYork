@@ -71,6 +71,7 @@ public:
     void add_to_hand(Card c);
     void remove_from_hand(Card c);
     bool check_card_hand(Card c);
+    bool check_card_hand(int id);   // I can check with both a CARD and a simple int matching a card's ID
     void add_energy(int x);
     void set_monster_name(const std::string& name);
     void display_branches(const std::string& current);

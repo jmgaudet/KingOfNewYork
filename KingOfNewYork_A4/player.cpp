@@ -65,6 +65,14 @@ bool Player::check_card_hand(Card c) {
     return false;
 }
 
+bool Player::check_card_hand(int id) {
+    for (const auto& card : hand) {
+        if (card.ID == id)
+            return true;
+    }
+    return false;
+}
+
 
 
 void Player::add_victoryPoints(int x) { victory_points += x; }

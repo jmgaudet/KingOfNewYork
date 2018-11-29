@@ -33,7 +33,19 @@ void CardExecution::update() {
 void CardExecution::execute(Player* p) {
     if (a_card->ID == 14) {
         p->add_victoryPoints(2);
-        p->remove_from_hand(*a_card);
+        p->remove_from_hand(*a_card);   // this is discard-type CARD
         a_card = nullptr;
     }
+    else if (a_card->ID == 18) {
+        // "Whenever you take damage because of rolling OUCH, take 1 less damage."
+    }
 }
+
+
+
+
+//"id": 18,
+//"name": "Bullet Proof",
+//"type": "keep",
+//"cost": 4,
+//"desc": "Whenever you take damage because of rolling OUCH, take 1 less damage."

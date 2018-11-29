@@ -216,6 +216,8 @@ void d_celeb(int x, Player *p, std::vector<Player *> pls) {
 }
 
 void d_ouch(int x, Player *p, std::vector<Player *> pls) {
+//    if (p->check_card_hand(18))
+//        x -= 1;
     if (x == 1 || x == 2) {
         auto itr = p->m_graph.walk.find(p->get_location())->second;
         int unit_count = 0;
@@ -224,12 +226,17 @@ void d_ouch(int x, Player *p, std::vector<Player *> pls) {
                 unit_count++;
         }
         if (x == 1) {
+            if (p->check_card_hand(18) && unit_count > 0)
+                unit_count -= 1;
             p->damage(unit_count);
             std::cout << "BAM POW KABOOM! " << p->get_monster_name() << " takes " << unit_count << " damage!\n";
         }
         else {
             for (auto& player : itr->players_list) {
-                player->damage(unit_count);
+                if ((p->check_card_hand(18)) && (player->get_monster_name() == p->get_monster_name()) && (unit_count > 0))
+                    player->damage(unit_count-1);
+                else
+                    player->damage(unit_count);
                 std::cout << "BAM POW KABOOM! " << player->get_monster_name() << " takes " << unit_count << " damage!\n";
                 player->Notify();
             }
@@ -245,8 +252,14 @@ void d_ouch(int x, Player *p, std::vector<Player *> pls) {
                     unit_count++;
             }
             for (auto& player : itr2->second->players_list) {
-                player->damage(unit_count);
-                std::cout << "BAM POW KABOOM! " << player->get_monster_name() << " takes " << unit_count << " damage!\n";
+                if ((p->check_card_hand(18)) && (player->get_monster_name() == p->get_monster_name()) && (unit_count > 0)) {
+                    player->damage(unit_count-1);
+                    std::cout << "BAM POW KABOOM! " << player->get_monster_name() << " takes " << (unit_count-1) << " damage!\n";
+                }
+                else {
+                    player->damage(unit_count);
+                    std::cout << "BAM POW KABOOM! " << player->get_monster_name() << " takes " << unit_count << " damage!\n";
+                }
                 player->Notify();
             }
         }
