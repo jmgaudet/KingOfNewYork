@@ -25,6 +25,7 @@
 #include "human_strategy.h"
 #include "subject.h"
 #include "card_exec.h"
+#include "dice_view.h"
 
 
 class Engine : public Subject {
@@ -35,9 +36,10 @@ private:
     void tournament_mode();
     void set_starting_positions();
     void setup_tiles(const Graph& g);
-    void setup_powerCards(std::vector<Card>& mydeck);
     void setup_playerObservers();
     void setup_cardExecution();
+    void setup_diceObservers();
+
     
 public:
     Engine();
@@ -46,7 +48,8 @@ public:
     Graph my_board;
     std::vector<Player*> vPlayers;
     int first;
-    
+    void setup_powerCards(std::vector<Card>& mydeck);
+
     std::vector<Card> my_deck;
     
     std::stack<Card> my_stack_pc;

@@ -15,7 +15,7 @@ Aggressive::~Aggressive() {}
 
 void Aggressive::dice_throw(Player* p) {
     p->m_dice.roll_dice();  // AI will use the same first two functions as Human Players
-    p->m_dice.display_dice();
+//    p->m_dice.display_dice();
     find_aggressive_dice(p);
 }
 
@@ -219,7 +219,7 @@ void Aggressive::find_aggressive_dice(Player* p) {
         }
         if (values.size() != 0) {   // an Aggressive AI player will ALWAYS roll_dice_again if it can possibly get more ATTACK or DESTRUCTION
             p->m_dice.roll_dice_again(values);
-            p->m_dice.display_dice();
+            p->m_dice.Notify();
         }
         turns++;
     }

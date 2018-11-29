@@ -50,7 +50,6 @@ void shuffle(RandomIt first, RandomIt last, URBG&& g)
 void shuffle_cards(std::vector<Card>& pc) {
     std::random_device rd;
     std::mt19937 g(rd());
-    
     std::shuffle(pc.begin(), pc.end(), g);
 }
 

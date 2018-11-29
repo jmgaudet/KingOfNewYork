@@ -69,6 +69,8 @@ public:
     std::string get_location();
     void manhattan_points();
     void add_to_hand(Card c);
+    void remove_from_hand(Card c);
+    bool check_card_hand(Card c);
     void add_energy(int x);
     void set_monster_name(const std::string& name);
     void display_branches(const std::string& current);

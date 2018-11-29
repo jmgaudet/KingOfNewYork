@@ -16,6 +16,7 @@ Dice::~Dice() {}
 void Dice::roll_dice() {
     for (int i = 0; i < member_num_of_dice; i++)
         m_collection[i] = get_random();
+    Notify();
 }
 
 std::vector<int>* Dice::get_collection() {
@@ -63,7 +64,8 @@ void Dice::other_dice_rolls() {
             std::cout << "ERROR: Incorrect input -- those dice cannot be rolled. Try again." << std::endl;
             continue;
         }
-        display_dice();
+        Notify();
+//        display_dice();
         turns++;
         
         if (turns <= 2) {

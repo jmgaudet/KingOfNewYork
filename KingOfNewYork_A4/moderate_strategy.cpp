@@ -14,7 +14,7 @@ Moderate::~Moderate() {}
 
 void Moderate::dice_throw(Player* p) {
     p->m_dice.roll_dice();      // AI will use the same first two functions as Human Players
-    p->m_dice.display_dice();
+//    p->m_dice.display_dice();
     find_moderate_dice(p);
 }
 
@@ -31,7 +31,8 @@ void Moderate::find_moderate_dice(Player* p) {
         }
         if (values.size() != 0) {
             p->m_dice.roll_dice_again(values);
-            p->m_dice.display_dice();
+            p->m_dice.Notify();
+//            p->m_dice.display_dice();
         }
         turns++;
     }

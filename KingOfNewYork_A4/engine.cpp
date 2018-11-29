@@ -31,7 +31,7 @@ Engine::Engine() {
     
     // return an int representing which player in the vector will go first:
     this->first = starting_player(vPlayers);
-    
+
     // going in order, each player will choose their starting positions:
     set_starting_positions();
     
@@ -40,12 +40,8 @@ Engine::Engine() {
     setup_powerCards(my_deck);
     init_tokens(web_tokens, jinx_tokens, souvenir_tokens, carapace_tokens);
     setup_playerObservers();
-//    setup_cardExecution();
+    setup_diceObservers();
 }
-
-//std::vector<Observer *>::iterator i = _observers->begin();
-//    for ( ; i != _observers->end(); ++i)
-//        (*i)->update(p);
 
 Engine::~Engine() {
 //    std::vector<Player *>::iterator i = vPlayers.begin();
@@ -157,7 +153,7 @@ void Engine::setup_tiles(const Graph& g) {
 
 void Engine::setup_powerCards(std::vector<Card>& d) {
     initiate_cards(d);
-    shuffle_cards(d);   // suffle_cards() MUST come before the below Observer creation. Or else the observers get mis-matched!
+    shuffle_cards(d);   // suffle_cards() MUST come *before* the Observer creation. Or else the observers get mis-matched!
     for (auto& card : d) {
         CardExecution* cdex = new CardExecution(&card);
         card.Attach(cdex);
@@ -173,11 +169,22 @@ void Engine::setup_powerCards(std::vector<Card>& d) {
 
 void Engine::setup_playerObservers() {
     std::cout << "[Initiating Player Observer.]" << std::endl;
-    for (int i = 0; i < vPlayers.size(); i++) {
-        PlayerView* plv = new PlayerView(vPlayers[i]);
-        vPlayers[i]->Attach(plv);
+    for (auto &player : vPlayers) {
+        PlayerView* plv = new PlayerView(player);
+        player->Attach(plv);
     }
 }
+
+void Engine::setup_diceObservers() {
+    std::cout << "[Initiating Dice Observer.]" << std::endl;
+//    for (auto& dice : )
+    for (auto &player : vPlayers) {
+        DiceView* dv = new DiceView(&player->m_dice);
+        player->m_dice.Attach(dv);
+    }
+
+}
+
 
 //void Engine::setup_cardExecution() {
 //    for (int i = 0; i < vPlayers.size(); i++) {

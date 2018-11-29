@@ -47,6 +47,26 @@ void Player::add_to_hand(Card c) {
     c.Notify(this);
 }
 
+void Player::remove_from_hand(Card c) {
+    std::vector<Card>::iterator it3;
+    for (it3 = hand.begin(); it3 != hand.end(); ++it3) {
+        if (it3->ID == c.ID) {
+            it3 = hand.erase(it3);
+            --it3;
+        }
+    }
+}
+
+bool Player::check_card_hand(Card c) {
+    for (const auto& card : hand) {
+        if (card.ID == c.ID)
+            return true;
+    }
+    return false;
+}
+
+
+
 void Player::add_victoryPoints(int x) { victory_points += x; }
 
 
@@ -85,7 +105,8 @@ int starting_player(std::vector<Player *> &v) {
                 v[i]->m_dice.set_specialRoll(true);
                 v[i]->m_dice.roll_dice();
                 std::cout << "\nPlayer #" << (i+1) << " rolled: ";
-                v[i]->m_dice.display_dice();
+//                v[i]->m_dice.Notify();
+                v[i]->m_dice.display_dice();    // 
                 std::vector<int> *c = v[i]->m_dice.get_collection();
                 int amount = v[i]->m_dice.count_attack(c);
                 std::cout << "(Player #" << (i+1) << " rolled " << amount << " ATTACK dice)\n\n";

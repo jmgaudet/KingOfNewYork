@@ -33,7 +33,7 @@ void CardExecution::update() {
 void CardExecution::execute(Player* p) {
     if (a_card->ID == 14) {
         p->add_victoryPoints(2);
-        delete a_card;
+        p->remove_from_hand(*a_card);
         a_card = nullptr;
     }
 }

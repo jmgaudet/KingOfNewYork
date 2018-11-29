@@ -14,7 +14,7 @@ Human::~Human() {}
 
 void Human::dice_throw(Player* p) {
     p->m_dice.roll_dice();
-    p->m_dice.display_dice();
+//    p->m_dice.display_dice();
     p->m_dice.other_dice_rolls();
     
 }
@@ -114,7 +114,7 @@ void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
             std::cout << "Enter the ID number of the card you wish to buy: ";
             std::string des = capture_input();
             int choice = get_digit(des);
-            int place = 0;
+            int place = 0;  // need a trailing int to keep track to the position of the CARD so that it can easily be erased
             for (const auto& card : v) {
                 if (card.ID == choice) {
                     if (card.cost <= p->get_energy()) {

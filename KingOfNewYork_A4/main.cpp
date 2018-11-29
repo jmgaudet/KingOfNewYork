@@ -22,7 +22,7 @@ void remove_player(std::vector<Player *>& p, size_t pos) {
     p.erase(itr);
 }
 
-void testing(Engine* e) {
+void testing_obs(Engine* e) {
     Player* bob = new Player(e->my_board, new Human);
     bob->set_monster_name("bob_monster");
     
@@ -48,12 +48,22 @@ void testing(Engine* e) {
     delete plm;
 }
 
+void testing_cards(Engine* e) {
+    Player* fred = new Player(e->my_board, new Human);
+    fred->set_monster_name("fred_monster");
+    PlayerView* plf = new PlayerView(fred);
+    fred->Attach(plf);
+    fred->set_location("Bronx");
+    fred->execute_buy_cards(fred, e->available_pc, e->my_stack_pc);
+}
+
 
 
 
 int main() {
     Engine* e = new Engine();
-//    testing(e);
+//    testing_obs(e);
+//    testing_cards(e);
     StatisticsView *overhead __attribute__((unused)) = new StatisticsView(e);
     bool end = false;
     size_t x = 0;
