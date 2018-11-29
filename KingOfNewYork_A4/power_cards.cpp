@@ -33,12 +33,10 @@ void initiate_cards(std::vector<Card>& pc) {
 
 // https://en.cppreference.com/w/cpp/algorithm/random_shuffle
 template<class RandomIt, class URBG>
-void shuffle(RandomIt first, RandomIt last, URBG&& g)
-{
+void shuffle(RandomIt first, RandomIt last, URBG&& g) {
     typedef typename std::iterator_traits<RandomIt>::difference_type diff_t;
     typedef std::uniform_int_distribution<diff_t> distr_t;
     typedef typename distr_t::param_type param_t;
-    
     distr_t D;
     diff_t n = last - first;
     for (diff_t i = n-1; i > 0; --i) {
@@ -50,7 +48,7 @@ void shuffle(RandomIt first, RandomIt last, URBG&& g)
 void shuffle_cards(std::vector<Card>& pc) {
     std::random_device rd;
     std::mt19937 g(rd());
-    std::shuffle(pc.begin(), pc.end(), g);
+    std::shuffle(pc.begin()+2, pc.end(), g);    // the "+2" stops the two special cards from being shuffled
 }
 
 void card_description(const Card& card) {

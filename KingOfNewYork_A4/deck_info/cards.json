@@ -152,7 +152,7 @@
 			"name": "Personal Spotlight",
 			"type": "keep",
 			"cost": 5,
-			"desc": "Gain 1 VICTORY_POINT each turn you rolled at least 1 VICTORY."
+			"desc": "Gain 1 VICTORY_POINT each turn you rolled at least 1 CELEBRITY."
 		},
 		{
 			"id": 22,
