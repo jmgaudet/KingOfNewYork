@@ -141,11 +141,9 @@ void d_destruction(int x, Player *p, std::vector<Player *> pls) {
     // WHILE the player still has DESTRUCTION dice to use:
     while (can_destroy(itr->revealed_tiles, x)) {
         std::cout << "\nWhich do you want to destroy?\n";
-        int choice;
-        std::cin >> choice;
-        std::cin.ignore();
-        if (verify_choice(choice, static_cast<int>(itr->revealed_tiles.size()))) {
-            choice -= 1;
+        std::string s = capture_input();
+        if (isValid_num(s, 1, static_cast<int>(itr->revealed_tiles.size()))) {
+            int choice = get_digit(s)-1;
             if (itr->revealed_tiles[choice].first.alive) {    // if the Tile at "choice" is a BUILDING:
                 if (itr->revealed_tiles[choice].first.durability <= x) {
                     itr->revealed_tiles[choice].first.alive = false;

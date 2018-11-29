@@ -105,7 +105,6 @@ int starting_player(std::vector<Player *> &v) {
                 v[i]->m_dice.set_specialRoll(true);
                 v[i]->m_dice.roll_dice();
                 std::cout << "\nPlayer #" << (i+1) << " rolled: ";
-//                v[i]->m_dice.Notify();
                 v[i]->m_dice.display_dice();    // 
                 std::vector<int> *c = v[i]->m_dice.get_collection();
                 int amount = v[i]->m_dice.count_attack(c);

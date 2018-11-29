@@ -52,7 +52,6 @@ void Dice::other_dice_rolls() {
     std::cout << "Do you want to roll the dice again?" << std::endl;
     bool answer = get_yesNo();
     while (answer && (turns <= 2)) {
-
         std::cout << "Which dice you want to *CHANGE* ?\n(Specify an index between 1 and 6, separated by a spaces):" << std::endl;
         std::string line = capture_input();
         std::istringstream os(line);
@@ -65,9 +64,7 @@ void Dice::other_dice_rolls() {
             continue;
         }
         Notify();
-//        display_dice();
         turns++;
-        
         if (turns <= 2) {
             std::cout << "\n\nDo you want to roll again? ";
             answer = get_yesNo();
