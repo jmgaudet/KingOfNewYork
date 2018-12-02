@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/aggressive_strategy.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o"
+  "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/card_exec.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o"
   "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_rolling.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o"
+  "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_view.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o"
   "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/engine.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o"
   "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/human_strategy.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o"
   "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/input.cpp" "/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o"

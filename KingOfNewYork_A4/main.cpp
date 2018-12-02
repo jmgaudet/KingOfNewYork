@@ -1,8 +1,3 @@
-//
-//  main.cpp
-//  KingOfNewYork_A3
-//  DRIVER
-//
 //  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N
@@ -123,7 +118,13 @@ int main() {
         }
     }
 finish:
-    std::cout << e->vPlayers[x]->get_monster_name() << " has won the game!\n";
+    // if a monster dies on their turn, then the last OTHER player wins the game:
+    if (e->vPlayers.size() == 1) {
+        for (int i = 0; i < 1; i++)
+            std::cout << e->vPlayers[i]->get_monster_name() << " has won the game!\n";
+    }
+    else
+        std::cout << e->vPlayers[x]->get_monster_name() << " has won the game!\n";
     delete overhead;
     delete e;
 }

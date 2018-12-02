@@ -15,12 +15,36 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o: ../K
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o: ../KingOfNewYork_A4/subject.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o: ../KingOfNewYork_A4/tiles.h
 
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/card_exec.cpp
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/card_exec.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/input.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/map.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/observer.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/player.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/player_view.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/power_cards.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/resolve.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/strategy.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/subject.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/tiles.h
+
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o: ../KingOfNewYork_A4/dice_rolling.cpp
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o: ../KingOfNewYork_A4/input.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o: ../KingOfNewYork_A4/subject.h
+
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/dice_view.cpp
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/dice_view.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/input.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/observer.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/subject.h
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/aggressive_strategy.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/card_exec.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/dice_view.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/engine.cpp
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/engine.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/human_strategy.h
@@ -29,6 +53,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/map_finder.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/map_loader.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/moderate_strategy.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/nlohmann/json.hpp
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/observer.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/player.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/player_view.h
@@ -57,7 +82,9 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o: ../KingOfNewYork_A
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o: ../KingOfNewYork_A4/input.h
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/aggressive_strategy.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/card_exec.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/dice_view.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/engine.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/human_strategy.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/input.h
@@ -135,6 +162,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.o: ../KingOfNew
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o: ../KingOfNewYork_A4/nlohmann/json.hpp
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o: ../KingOfNewYork_A4/power_cards.cpp
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o: ../KingOfNewYork_A4/power_cards.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o: ../KingOfNewYork_A4/subject.h
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o: ../KingOfNewYork_A4/input.h
@@ -150,7 +178,9 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o: ../KingOfNewYork
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o: ../KingOfNewYork_A4/tiles.h
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/aggressive_strategy.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/card_exec.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/dice_rolling.h
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/dice_view.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/engine.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/human_strategy.h
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/input.h

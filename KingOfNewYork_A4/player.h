@@ -1,7 +1,3 @@
-//
-//  player.h
-//  KingOfNewYork_A3
-//
 //  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N
@@ -32,7 +28,7 @@ class Player : public Subject {
 private:
     int life_points = 10;
     int victory_points = 0;
-    int energy_cubes = 2000;
+    int energy_cubes = 0;
     Zone player_zone = OUTSIDE; // a Player always begins the game OUTSIDE of Manhattan
     Phase player_phase = START;
     std::vector<Card> hand;     // this is for the player's cards that they bought
@@ -49,6 +45,7 @@ public:
     virtual ~Player();
     Dice m_dice;
     Graph m_graph;  // need this to be public, because the player, inside of resolve.cpp, needs to see what buildings he can destroy
+    std::vector<Card> inactive_cards;
     bool attacked = false;
     bool m_in_manhattan = false;
     bool validate_location(const std::string& current, const std::string& selec);
@@ -69,12 +66,14 @@ public:
     std::string get_location();
     void manhattan_points();
     void add_to_hand(Card c);
+    void assign_superstar();
     void remove_from_hand(Card c);
     bool check_card_hand(Card c);
     bool check_card_hand(int id);   // I can check with both a CARD and a simple int matching a card's ID
     void add_energy(int x);
     void set_monster_name(const std::string& name);
     void display_branches(const std::string& current);
+    void display_avail_cards(const std::vector<Card>& v);
 
     // STRATEGY METHODS:
     void execute_dice_rolling(Player* p);

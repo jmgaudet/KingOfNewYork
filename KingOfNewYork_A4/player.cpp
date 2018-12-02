@@ -1,7 +1,3 @@
-//
-//  player.cpp
-//  KingOfNewYork_A3
-//
 //  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N
@@ -72,6 +68,10 @@ bool Player::check_card_hand(int id) {
     }
     return false;
 }
+
+//void Player::assign_superstar() {
+//    this->hand.push_back()
+//}
 
 
 
@@ -275,6 +275,16 @@ void Player::manhattan_points() {
     if (player_zone == UPPER) {
         add_energy(2);
         add_victoryPoints(2);
+    }
+    if (check_card_hand(39))
+        healer(1);
+}
+
+void Player::display_avail_cards(const std::vector<Card>& v) {
+    // print to the CONSOLE the 3 available cards:
+    for (const auto& card : v) {
+        card_description(card);
+        std::cout << '\n';
     }
 }
 

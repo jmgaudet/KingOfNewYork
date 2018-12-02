@@ -1,9 +1,6 @@
-//
-//  dice_view.h
-//  KingOfNewYork_A4
-//
-//  Created by Jeremy Gaudet on 2018-11-28.
-//  Copyright © 2018 JeremyGaudet. All rights reserved.
+//  Created by Jeremy Gaudet on 2018-10-27.
+//  ID: #40045224
+//  COMP_345_Section_N
 //
 
 #ifndef dice_view_h

@@ -1,8 +1,4 @@
-//
-//  human_strategy.cpp
-//  KingOfNewYork_A3
-//
-//  Created by Jeremy Gaudet on 2018-11-17.
+//  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N
 //
@@ -94,20 +90,20 @@ bool Human::flee(Player* p, std::string current_loc) {
     return false;
 }
 
-void display_avail_cards(const std::vector<Card>& v) {
-    // print to the CONSOLE the 3 available cards:
-    for (const auto& card : v) {
-        card_description(card);
-        std::cout << '\n';
-    }
-}
+//void display_avail_cards(const std::vector<Card>& v) {
+//    // print to the CONSOLE the 3 available cards:
+//    for (const auto& card : v) {
+//        card_description(card);
+//        std::cout << '\n';
+//    }
+//}
 
 void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
     bool done = false;
     while (!done) {
         std::cout << "\n//--------------------------------------------------------------------//\n"
         << "Do you want to purchase any of these Power cards? You have " << p->get_energy() << " ENERGY CUBES that you can spend.\n\n";
-        display_avail_cards(v);
+        p->display_avail_cards(v);
         std::cout << "\nThese are the ones available [y/n]: ";
         bool answer = get_yesNo();
         if (answer) {

@@ -1,8 +1,4 @@
-
-//  engine.cpp
-//  KingOfNewYork_A3
-//
-//  Created by Jeremy Gaudet on 2018-11-15.
+//  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N
 //
@@ -158,8 +154,13 @@ void Engine::setup_powerCards(std::vector<Card>& d) {
         CardExecution* cdex = new CardExecution(&card);
         card.Attach(cdex);
     }
-    for (const auto& card : d)
+    for (const auto& card : d) {
+        if (card.ID == 1 || card.ID == 0) {
+            vPlayers[0]->inactive_cards.emplace_back(card);
+            continue;
+        }
         my_stack_pc.push(card);
+    }
     while (available_pc.size() < 3) {
         available_pc.push_back(my_stack_pc.top());
         my_stack_pc.pop();

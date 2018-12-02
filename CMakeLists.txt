@@ -13,6 +13,10 @@ add_executable(KingOfNewYork_A4
         KingOfNewYork_A4/nlohmann/json.hpp
         KingOfNewYork_A4/aggressive_strategy.cpp
         KingOfNewYork_A4/aggressive_strategy.h
+        KingOfNewYork_A4/card_exec.cpp
+        KingOfNewYork_A4/card_exec.h
+        KingOfNewYork_A4/dice_view.cpp
+        KingOfNewYork_A4/dice_view.h
         KingOfNewYork_A4/dice_rolling.cpp
         KingOfNewYork_A4/dice_rolling.h
         KingOfNewYork_A4/engine.cpp

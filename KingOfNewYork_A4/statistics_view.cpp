@@ -1,10 +1,7 @@
-//
-//  statistics_view.cpp
-//  KingOfNewYork_A3
-//
-//  Created by Jeremy Gaudet on 2018-11-18.
-//  Copyright © 2018 JeremyGaudet. All rights reserved.
-//
+//  Created by Jeremy Gaudet on 2018-10-27.
+//  ID: #40045224
+//  COMP_345_Section_N
+
 
 #include <stdio.h>
 #include <iostream>

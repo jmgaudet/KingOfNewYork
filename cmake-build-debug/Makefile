@@ -150,6 +150,33 @@ KingOfNewYork_A4/aggressive_strategy.cpp.s:
 	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.s
 .PHONY : KingOfNewYork_A4/aggressive_strategy.cpp.s
 
+KingOfNewYork_A4/card_exec.o: KingOfNewYork_A4/card_exec.cpp.o
+
+.PHONY : KingOfNewYork_A4/card_exec.o
+
+# target to build an object file
+KingOfNewYork_A4/card_exec.cpp.o:
+	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o
+.PHONY : KingOfNewYork_A4/card_exec.cpp.o
+
+KingOfNewYork_A4/card_exec.i: KingOfNewYork_A4/card_exec.cpp.i
+
+.PHONY : KingOfNewYork_A4/card_exec.i
+
+# target to preprocess a source file
+KingOfNewYork_A4/card_exec.cpp.i:
+	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.i
+.PHONY : KingOfNewYork_A4/card_exec.cpp.i
+
+KingOfNewYork_A4/card_exec.s: KingOfNewYork_A4/card_exec.cpp.s
+
+.PHONY : KingOfNewYork_A4/card_exec.s
+
+# target to generate assembly for a file
+KingOfNewYork_A4/card_exec.cpp.s:
+	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.s
+.PHONY : KingOfNewYork_A4/card_exec.cpp.s
+
 KingOfNewYork_A4/dice_rolling.o: KingOfNewYork_A4/dice_rolling.cpp.o
 
 .PHONY : KingOfNewYork_A4/dice_rolling.o
@@ -176,6 +203,33 @@ KingOfNewYork_A4/dice_rolling.s: KingOfNewYork_A4/dice_rolling.cpp.s
 KingOfNewYork_A4/dice_rolling.cpp.s:
 	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.s
 .PHONY : KingOfNewYork_A4/dice_rolling.cpp.s
+
+KingOfNewYork_A4/dice_view.o: KingOfNewYork_A4/dice_view.cpp.o
+
+.PHONY : KingOfNewYork_A4/dice_view.o
+
+# target to build an object file
+KingOfNewYork_A4/dice_view.cpp.o:
+	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o
+.PHONY : KingOfNewYork_A4/dice_view.cpp.o
+
+KingOfNewYork_A4/dice_view.i: KingOfNewYork_A4/dice_view.cpp.i
+
+.PHONY : KingOfNewYork_A4/dice_view.i
+
+# target to preprocess a source file
+KingOfNewYork_A4/dice_view.cpp.i:
+	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.i
+.PHONY : KingOfNewYork_A4/dice_view.cpp.i
+
+KingOfNewYork_A4/dice_view.s: KingOfNewYork_A4/dice_view.cpp.s
+
+.PHONY : KingOfNewYork_A4/dice_view.s
+
+# target to generate assembly for a file
+KingOfNewYork_A4/dice_view.cpp.s:
+	$(MAKE) -f CMakeFiles/KingOfNewYork_A4.dir/build.make CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.s
+.PHONY : KingOfNewYork_A4/dice_view.cpp.s
 
 KingOfNewYork_A4/engine.o: KingOfNewYork_A4/engine.cpp.o
 
@@ -675,9 +729,15 @@ help:
 	@echo "... KingOfNewYork_A4/aggressive_strategy.o"
 	@echo "... KingOfNewYork_A4/aggressive_strategy.i"
 	@echo "... KingOfNewYork_A4/aggressive_strategy.s"
+	@echo "... KingOfNewYork_A4/card_exec.o"
+	@echo "... KingOfNewYork_A4/card_exec.i"
+	@echo "... KingOfNewYork_A4/card_exec.s"
 	@echo "... KingOfNewYork_A4/dice_rolling.o"
 	@echo "... KingOfNewYork_A4/dice_rolling.i"
 	@echo "... KingOfNewYork_A4/dice_rolling.s"
+	@echo "... KingOfNewYork_A4/dice_view.o"
+	@echo "... KingOfNewYork_A4/dice_view.i"
+	@echo "... KingOfNewYork_A4/dice_view.s"
 	@echo "... KingOfNewYork_A4/engine.o"
 	@echo "... KingOfNewYork_A4/engine.i"
 	@echo "... KingOfNewYork_A4/engine.s"

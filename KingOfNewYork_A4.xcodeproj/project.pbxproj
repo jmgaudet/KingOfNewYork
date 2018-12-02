@@ -23,6 +23,7 @@
 		53912279219CBE3200329746 /* player_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53912278219CBE3200329746 /* player_view.cpp */; };
 		5391227D219E132F00329746 /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5391227C219E132F00329746 /* engine.cpp */; };
 		53912280219E64B600329746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5391227F219E64B500329746 /* main.cpp */; };
+		539CAB6121AF63B20078020D /* dice_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539CAB6021AF63B20078020D /* dice_view.cpp */; };
 		53C9491C216AA1C500D839F1 /* dice_rolling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C9491A216AA1C500D839F1 /* dice_rolling.cpp */; };
 		53C9491F216AAB3000D839F1 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C9491E216AAB3000D839F1 /* input.cpp */; };
 		53C94921216AAC4A00D839F1 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C94920216AAC4A00D839F1 /* player.cpp */; };
@@ -73,6 +74,8 @@
 		5391227C219E132F00329746 /* engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
 		5391227E219E133800329746 /* engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
 		5391227F219E64B500329746 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		539CAB6021AF63B20078020D /* dice_view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dice_view.cpp; sourceTree = "<group>"; };
+		539CAB6221AF63C30078020D /* dice_view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dice_view.h; sourceTree = "<group>"; };
 		53A1AC10216D6ECD001458B7 /* power_cards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = power_cards.h; sourceTree = "<group>"; };
 		53A1AC12216D7E75001458B7 /* deck_info */ = {isa = PBXFileReference; lastKnownFileType = folder; path = deck_info; sourceTree = "<group>"; };
 		53C948FF216A98E800D839F1 /* KingOfNewYork_A4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KingOfNewYork_A4; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +129,8 @@
 				53A1AC12216D7E75001458B7 /* deck_info */,
 				53C9491A216AA1C500D839F1 /* dice_rolling.cpp */,
 				53C9491B216AA1C500D839F1 /* dice_rolling.h */,
+				539CAB6021AF63B20078020D /* dice_view.cpp */,
+				539CAB6221AF63C30078020D /* dice_view.h */,
 				5391227C219E132F00329746 /* engine.cpp */,
 				5391227E219E133800329746 /* engine.h */,
 				537DE94721A10874006A67C2 /* human_strategy.cpp */,
@@ -237,6 +242,7 @@
 				5341FD0621ACD07700301601 /* card_exec.cpp in Sources */,
 				53912279219CBE3200329746 /* player_view.cpp in Sources */,
 				53C9491F216AAB3000D839F1 /* input.cpp in Sources */,
+				539CAB6121AF63B20078020D /* dice_view.cpp in Sources */,
 				53723601218D185C00A5EE1C /* power_cards.cpp in Sources */,
 				53C94924216AB3B300D839F1 /* map_loader.cpp in Sources */,
 				53912275219C6B3E00329746 /* subject.cpp in Sources */,

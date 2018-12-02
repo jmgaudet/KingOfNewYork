@@ -70,9 +70,35 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/aggressive_strategy.cpp -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.s
 
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o: ../KingOfNewYork_A4/card_exec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/card_exec.cpp
+
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/card_exec.cpp > CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.i
+
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/card_exec.cpp -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.s
+
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o: ../KingOfNewYork_A4/dice_view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_view.cpp
+
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_view.cpp > CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.i
+
+CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_view.cpp -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.s
+
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o: ../KingOfNewYork_A4/dice_rolling.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_rolling.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.i: cmake_force
@@ -85,7 +111,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o: ../KingOfNewYork_A4/engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/engine.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.i: cmake_force
@@ -98,7 +124,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o: ../KingOfNewYork_A4/human_strategy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/human_strategy.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.i: cmake_force
@@ -111,7 +137,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.s: cmake_for
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o: ../KingOfNewYork_A4/input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/input.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.i: cmake_force
@@ -124,7 +150,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/input.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o: ../KingOfNewYork_A4/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/main.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.i: cmake_force
@@ -137,7 +163,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/main.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.o: ../KingOfNewYork_A4/map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/map.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.i: cmake_force
@@ -150,7 +176,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.o: ../KingOfNewYork_A4/map_finder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/map_finder.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.i: cmake_force
@@ -163,7 +189,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_finder.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.o: ../KingOfNewYork_A4/map_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/map_loader.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.i: cmake_force
@@ -176,7 +202,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/map_loader.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.o: ../KingOfNewYork_A4/moderate_strategy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/moderate_strategy.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.i: cmake_force
@@ -189,7 +215,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/moderate_strategy.cpp.s: cmake_
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.o: ../KingOfNewYork_A4/observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/observer.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.i: cmake_force
@@ -202,7 +228,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/observer.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.o: ../KingOfNewYork_A4/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/player.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.i: cmake_force
@@ -215,7 +241,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.o: ../KingOfNewYork_A4/player_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/player_view.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.i: cmake_force
@@ -228,7 +254,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/player_view.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o: ../KingOfNewYork_A4/power_cards.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/power_cards.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.i: cmake_force
@@ -241,7 +267,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/power_cards.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o: ../KingOfNewYork_A4/resolve.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/resolve.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.i: cmake_force
@@ -254,7 +280,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/resolve.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o: ../KingOfNewYork_A4/statistics_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/statistics_view.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.i: cmake_force
@@ -267,7 +293,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/statistics_view.cpp.s: cmake_fo
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.o: ../KingOfNewYork_A4/strategy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/strategy.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.i: cmake_force
@@ -280,7 +306,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/strategy.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.o: ../KingOfNewYork_A4/subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/subject.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.i: cmake_force
@@ -293,7 +319,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/subject.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.o: ../KingOfNewYork_A4/tiles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/tiles.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.i: cmake_force
@@ -306,7 +332,7 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.s: cmake_force
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.o: CMakeFiles/KingOfNewYork_A4.dir/flags.make
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.o: ../KingOfNewYork_A4/tokens.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.o -c /Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/tokens.cpp
 
 CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.i: cmake_force
@@ -320,6 +346,8 @@ CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.s: cmake_force
 # Object files for target KingOfNewYork_A4
 KingOfNewYork_A4_OBJECTS = \
 "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o" \
+"CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o" \
+"CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o" \
 "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o" \
 "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o" \
 "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o" \
@@ -344,6 +372,8 @@ KingOfNewYork_A4_OBJECTS = \
 KingOfNewYork_A4_EXTERNAL_OBJECTS =
 
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o
+KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o
+KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o
@@ -365,7 +395,7 @@ KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tiles.cpp.o
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/tokens.cpp.o
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/build.make
 KingOfNewYork_A4: CMakeFiles/KingOfNewYork_A4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable KingOfNewYork_A4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable KingOfNewYork_A4"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KingOfNewYork_A4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

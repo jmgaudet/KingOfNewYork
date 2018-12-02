@@ -96,6 +96,12 @@
 		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/aggressive_strategy.h">
 			<Option target="KingOfNewYork_A4"/>
 		</Unit>
+		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/card_exec.cpp">
+			<Option target="KingOfNewYork_A4"/>
+		</Unit>
+		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/card_exec.h">
+			<Option target="KingOfNewYork_A4"/>
+		</Unit>
 		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/deck_info/cards.json">
 			<Option target="KingOfNewYork_A4"/>
 		</Unit>
@@ -103,6 +109,12 @@
 			<Option target="KingOfNewYork_A4"/>
 		</Unit>
 		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_rolling.h">
+			<Option target="KingOfNewYork_A4"/>
+		</Unit>
+		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_view.cpp">
+			<Option target="KingOfNewYork_A4"/>
+		</Unit>
+		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/dice_view.h">
 			<Option target="KingOfNewYork_A4"/>
 		</Unit>
 		<Unit filename="/Users/jeremygaudet/Documents/Xcode/KingOfNewYork_A4/KingOfNewYork_A4/engine.cpp">

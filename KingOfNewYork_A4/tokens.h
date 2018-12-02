@@ -1,7 +1,4 @@
 //
-//  tokens.h
-//  KingOfNewYork_A3
-//
 //  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N

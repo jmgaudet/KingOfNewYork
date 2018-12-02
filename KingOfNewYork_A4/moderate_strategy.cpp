@@ -1,8 +1,4 @@
-//
-//  moderate_strategy.cpp
-//  KingOfNewYork_A3
-//
-//  Created by Jeremy Gaudet on 2018-11-16.
+//  Created by Jeremy Gaudet on 2018-10-27.
 //  ID: #40045224
 //  COMP_345_Section_N
 //
@@ -25,7 +21,7 @@ void Moderate::find_moderate_dice(Player* p) {
         std::vector<int> *c = p->m_dice.get_collection();
         int i = 1;
         for (int e : *c) {
-            if (e != 1 && e != 4)
+            if (e != 5 && e != 4)
                 values.push_back(i);
             i++;
         }
@@ -208,10 +204,6 @@ bool Moderate::flee(Player* p, std::string current_loc) {
     return false;
 }
 
-void Moderate::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
-    
-}
-
 void Moderate::choose_to_move(Player* p) {
     if (p->get_lifepoints() < 8) {  // a Moderate player will flee Manhattan quickly
         p->attacked = true;
@@ -234,6 +226,49 @@ void Moderate::starting_position(Player* p) {
             itr->num_players++;
             itr->players_list.push_back(p);
             return;
+        }
+    }
+}
+
+void Moderate::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
+    bool done = false;
+    while (!done) {
+        std::cout << "\n//--------------------------------------------------------------------//\n"
+        << "Do you want to purchase any of these Power cards? You have " << p->get_energy() << " ENERGY CUBES that you can spend.\n\n";
+        p->display_avail_cards(v);
+        std::cout << "\nThese are the ones available [y/n]: ";
+        int answer = 0;
+        if (answer == 1) {
+            std::cout << "Enter the ID number of the card you wish to buy: ";
+            std::string des = capture_input();
+            int choice = get_digit(des);
+            int place = 0;  // need a trailing int to keep track to the position of the CARD so that it can easily be erased
+            for (const auto& card : v) {
+                if (card.ID == choice) {
+                    if (card.cost <= p->get_energy()) {
+                        p->add_energy(-card.cost);
+                        p->add_to_hand(card);
+                        std::cout << "\n * You have this many remaining ENERGY CUBES: " << p->get_energy() << "\n\n";
+                        v.erase(v.begin()+place);   // if the player buys a card matching the correct ID, the card must be removed from the vector
+                        // re-populate the available Power cards list:
+                        while (v.size() < 3 && s.size() > 0) {
+                            v.push_back(s.top());
+                            s.pop();
+                        }
+                    } else
+                        std::cout << "You don't have enough ENERGY CUBES to buy that card.\n";
+                }
+                place++;    // needed to map Player's choice to the vector of available cards
+            }
+        }
+        else if (answer == 0) {
+            std::cout << "\n-\"No.\"" << std::endl;
+            if (p->get_energy() >= 2) {
+                std::cout << "Do you want to spend 2 ENERGY CUBES to discard these power cards? [y/n]: ";
+                std::cout << "\n-\"No.\"" << std::endl;
+                done = true;
+            }
+            done = true;
         }
     }
 }

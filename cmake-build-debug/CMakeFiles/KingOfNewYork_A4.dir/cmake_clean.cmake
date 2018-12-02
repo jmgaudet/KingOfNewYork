@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/aggressive_strategy.cpp.o"
+  "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/card_exec.cpp.o"
+  "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_view.cpp.o"
   "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/dice_rolling.cpp.o"
   "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/engine.cpp.o"
   "CMakeFiles/KingOfNewYork_A4.dir/KingOfNewYork_A4/human_strategy.cpp.o"
