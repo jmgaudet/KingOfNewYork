@@ -39,15 +39,7 @@ Engine::Engine() {
     setup_diceObservers();
 }
 
-Engine::~Engine() {
-//    std::vector<Player *>::iterator i = vPlayers.begin();
-//    for ( ; i != vPlayers.end(); ++i) {
-//        delete (*i);
-//        vPlayers.erase(i);
-//    }
-//
-//    std::cout << "size --> " << vPlayers.size() << std::endl;
-}
+Engine::~Engine() {}
 
 void Engine::choose_map() {
     //  Preparing the Game Board, and setting Player turn order
@@ -185,31 +177,4 @@ void Engine::setup_diceObservers() {
     }
 
 }
-
-
-//void Engine::setup_cardExecution() {
-//    for (int i = 0; i < vPlayers.size(); i++) {
-//        CardE
-//    }
-//}
-
-//void Engine::setup_playerObservers() {
-//    PlayerView* humanView = new PlayerView(vPlayers[0]);
-//    for (int i = 0; i < vPlayers.size(); i++) {
-//        PlayerView* pViewOthers  = new PlayerView(vPlayers.at(i));
-//    }
-//    for (int i = 0; i < vPlayers.size(); i++)
-//        PlayerView* plv = new PlayerView(vPlayers[i]);
-//}
-
-
-
-
-//void GameState::setupObservers() {
-//    playerView* pView1 = new playerView(player);
-//    for (int i = 0; i < AIPlayers.size(); i++) {
-//        playerView* pViewOthers = new playerView(AIPlayers.at(i));
-//    }
-//    cout << "Player observer initiated." << endl;
-//}
 

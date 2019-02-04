@@ -10,9 +10,7 @@ Human::~Human() {}
 
 void Human::dice_throw(Player* p) {
     p->m_dice.roll_dice();
-//    p->m_dice.display_dice();
     p->m_dice.other_dice_rolls();
-    
 }
 
 
@@ -89,14 +87,6 @@ bool Human::flee(Player* p, std::string current_loc) {
     }
     return false;
 }
-
-//void display_avail_cards(const std::vector<Card>& v) {
-//    // print to the CONSOLE the 3 available cards:
-//    for (const auto& card : v) {
-//        card_description(card);
-//        std::cout << '\n';
-//    }
-//}
 
 void Human::buy_cards(Player* p, std::vector<Card>& v, std::stack<Card>& s) {
     bool done = false;

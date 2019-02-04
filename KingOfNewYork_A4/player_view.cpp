@@ -10,17 +10,12 @@ PlayerView::PlayerView() {}
 
 PlayerView::PlayerView(Player* p) {
     _player = p;
-//    _player->Attach(this);
 }
 
 PlayerView::~PlayerView() {
     // upon destruction, it detaches itself from its player
     _player->Detach(this);
 }
-
-//void PlayerView::register_view(Player* p) {
-//    _player->Attach(this);
-//}
 
 void PlayerView::update() {
     monster_name = _player->get_monster_name();
